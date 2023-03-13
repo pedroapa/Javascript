@@ -15,7 +15,17 @@
         var ano = window.prompt('Digite o ano dele: ')
         var preco = Number.parseFloat(window.prompt('Quantos custou? '))
 
-        document.write('Ola ' +nome+ ' você tem o carro ' +marca+ ' e do ano' +ano+ ' e pagou '+ preco)
+        /*
+        //Usando concatenação
+        document.write('Ola ' +nome+ ', o seu carro é ' +marca+ ', do ano ' +ano+ ' e pagou '+ preco)
+        */
+
+        //usando templet de string
+        document.write(`Ola ${nome.toUpperCase()}, o seu carro é ${marca.toLowerCase()}, do ano ${ano} e pagou ${preco.toFixed(2).replace('.', ',')}`)
+
+        //Para configurar quantas casas depois da virgula e trocar o ponto por virgula
+        preco.toFixed(2).replace('.', ',');
+
 
     </script>
     
