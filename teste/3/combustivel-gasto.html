@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrir quantos Litros de Combustivel foram gasto</title>
+</head>
+<body>
+
+    <script>
+        var tempo = window.prompt('Digite quantas horas durou a viagem: ')
+        var velocidade = window.prompt('Agora informe a velocidade media da viagem: ')
+
+        //Descobrir a distancia percorrida
+        var distancia = tempo * velocidade;
+        //Descobrir a quantidade de listro consumidos
+        var comb_consumidos = distancia / 12;
+
+        document.write(`${comb_consumidos.toFixed(3)}<br>`)
+    </script>
+</body>
+</html>
