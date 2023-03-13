@@ -21,10 +21,10 @@
         */
 
         //usando templet de string
-        document.write(`Ola ${nome.toUpperCase()}, o seu carro é ${marca.toLowerCase()}, do ano ${ano} e pagou ${preco.toFixed(2).replace('.', ',')}`)
+        document.write(`Ola ${nome.toUpperCase()}, o seu carro é ${marca.toLowerCase()}, do ano ${ano} e pagou ${preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) }`)
 
         //Para configurar quantas casas depois da virgula e trocar o ponto por virgula
-        preco.toFixed(2).replace('.', ',');
+        //preco.toFixed(2).replace('.', ',');
 
 
     </script>
