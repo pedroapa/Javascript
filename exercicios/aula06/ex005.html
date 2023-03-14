@@ -7,7 +7,7 @@
     <title>Primeiros passos com DOM</title>
     <style>
         body {
-            background-color: rgba(0, 0, 255, 0.363);
+            background-color: rgba(27, 27, 231, 0.486);
             color: white;
             font: normal 18pt Arial;
         }
@@ -17,17 +17,30 @@
     <h1>Inciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div class="msg">Clique em mim</div>
     
     <script>
         //Da para mexer no corpo
         var corpo = window.document.body 
-        var p1 = window.document.getElementsByTagName('p')[0]
-        //window.document.write('Oesta escrito assim: ' +p1.innerText)
-        p1.style.color = 'blue'
+        var p1 = window.document.getElementsByTagName('p')[1]
 
-        //modificando cor de fundo
-        corpo.style.background = 'black'
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+        window.document.getElementById('msg').innerText = 'Ola'
+        
+       var d = window.document.getElementsByName('msg')[0]
+       d.innerText = 'Ola1'
+       
+       var d = window.document.getElementsByClassName('msg')[0]
+       d.innerText = 'Oia'
+        */
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'blue'
+        d.innerText = 'Hoje esta calor'
+
+        window.document.write(p1.innerText)
     </script>
 </body>
 </html>
