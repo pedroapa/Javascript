@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset="UTF-8">
+    <title>Estudando</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+
+        .vermelho{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--Faça o seguinte:
+    – inverta as classes (itens com azul terão a classe vermelho e vermelho terão a classe azul).-->
+    <ul>
+        <li class="azul">Item1</li>
+        <li class="vermelho">Item</li>
+        <li class="azul">Item1</li>
+        <li class="vermelho">Item</li>
+        <li class="azul">Item1</li>
+        <li class="vermelho">Item</li>
+    </ul>
+
+    <script>
+        /*usando por classe
+        var cor = window.document.getElementsByClassName('azul')[0]
+        cor.style.color = 'green'
+        */
+       /*Usando por Seletor individual
+       var cor = window.document.querySelector('li.azul')
+       cor.style.color = 'green'
+       */
+      //Testando quando é varios
+      var cor = window.document.querySelectorAll('li.azul')[0]
+      cor.style.color = 'red'
+
+      var cor = window.document.querySelectorAll('li.azul')[1]
+      cor.style.color = 'red'
+
+      var cor = window.document.querySelectorAll('li.azul')[2]
+      cor.style.color = 'red'
+
+      /*Mudando a cor dos outros li*/
+      var cor2 = window.document.getElementsByClassName('vermelho')[0]
+      cor2.style.color = 'blue'
+
+      var cor2 = window.document.getElementsByClassName('vermelho')[1]
+      cor2.style.color = 'blue'
+
+      var cor2 = window.document.getElementsByClassName('vermelho')[2]
+      cor2.style.color = 'blue'
+    </script>
+</body>
+</html>
