@@ -1,0 +1,41 @@
+configurando no HTML, em uma div, colocamos o parametro
+ on e depois qual é o evento, que 
+no caso é click seguido por uma chamada de função.
+No JavaScript tem o corpo da função chamada, que no
+ seu bloco tem um trecho de código que 
+só vai ser executado quando o evento for disparado.
+Nesta função primeiramente criamos um objeto que 
+vai receber a ligação do elemento 
+div#area, que em seguido vamos alterar o conteudo de
+ texto da div de 'intereja..' para 'clicou'.
+
+
+mexer com JavaScript é intessante como mudamos de
+ estado. Se entramos no elemente ele 
+fez algo, e só muda algo se aparecer outro evento
+ para alterar. Sempre um vai alterando algo 
+que estava como normal. Voce pode quando entrar
+ alterar alguma coisa que quando sair, voce 
+pode fazer voltar ao normal como era antes de interagir.
+
+
+Tem varias formas de selecionar um elemento. Se vamos
+ usar qual tag ele pertence, name, id, 
+classe e Seletor. O mais fácil e que todos estam
+ acostumado é pelo id, porque não precisa 
+ficar dizendo qual elemente é por [posição]. Nas
+ ultimas versões agora é possivel acessar pelo 
+Seletor, também é fácil, sendo fácil. Ex: tem uma div
+ com id 'area'. 
+Usando o id ficaria:
+a.window.document.getElementById('area')
+e agora por Seletor
+a.window.document.querySelector('div#area')
+
+
+
+
+
+
+
+
