@@ -29,31 +29,34 @@
     <h1>Tabuada</h1>
     <p>Insira um número no espaço a seguir e descobra sua tabuada</p>
     <input type="number" name="tNum" id="cNum">
-    <input type="button" value="Descobri">
+    <input type="button" value="Descobri" onclick="tabuada()">
     <div id="result">Resultado</div>
 
     <script>
-        //Escutadores de evento
-        var res = window.document.querySelector('div#result')
-        res.addEventListener('click', tabuada)
 
         //Função
         function tabuada(){
             //Criei o objeto do input
             var oNum = window.document.querySelector('input#cNum')
+            var res = window.document.querySelector('div#result')
 
-            //numero que vou usar
-            var n = document.NumberPatInt(oNum.value)
-            //Number(oNum.value) 
+            //numero oferecido pelo usuario
+            var n = Number(oNum.value) 
 
+            //inicializando as variaveis que vão auxiliar
             var cont = 0
             var resposta = 0
+
+            
 
             //Criar a tabuada
             while( cont <= 10 ){
                 resposta = n * cont
-                res.innerHTML = `${n} x ${cont} = ${resposta}` 
+                
+                /*
+                res.document.write(`${n} x ${cont} = <strong>${resposta}</strong> <br>`)
                 cont++
+                */
             }
         }
         
