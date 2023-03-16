@@ -24,22 +24,25 @@
     <h1>Praticando DOM</h1>
     <input type="number" name="tNum1" id="cNum1">
     <input type="number" name="tNum2" id="cNum2">
-    <input type="button" value="Calcular">
+    <input type="button" value="Calcular" onclick="Somar()">
     <div id="result">Resultado</div>
     
     <script>
-        //Criando os objetos
-        var tnum1 = window.document.getElementById('cNum1')
-        var tnum2 = window.document.querySelector('input#cNum2')
+        function Somar(){
+            //Criando os objetos
+            var tnum1 = window.document.getElementById('cNum1')
+            var tnum2 = window.document.querySelector('input#cNum2')
 
-        //Os valores
-        var n1 = Number(tnum1.value)
-        var n2 = Number(tnum2.value) 
-        var soma = n1 + n2 
+            //Os valores
+            var n1 = Number(tnum1.value)
+            var n2 = Number(tnum2.value) 
+            var soma = n1 + n2 
 
-        //Passando o resultado para a div
-        res = window.document.getElementById('result')
-        res.innerHTML = `A Soma entre ${n1} e ${n2} é igual <strong>${soma}</strong> `
+            //Passando o resultado para a div
+            res = window.document.getElementById('result')
+            res.innerHTML = `A Soma entre ${n1} e ${n2} é igual <strong>${soma}</strong> `
+        }
+        
 
     </script>
 </body>
