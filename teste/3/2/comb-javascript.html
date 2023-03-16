@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Combustivel Dinamicamente</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        div#result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descobrir quantos Litros de Combustivel foram gasto</h1>
+
+    <h3>Digite quantas horas durou a viagem: </h3>
+    <input type="number" name="tHoras" id="cHoras"> 
+    <br>
+    <h3>Agora informe a velocidade media da viagem:</h3>
+    <input type="number" name="tVel" id="cVel">
+    <input type="button" value="Calcular" onclick="calCombustivel()">
+    <div id="result">Resultado</div>
+
+    
+    <script>
+        function calCombustivel(){
+            //Criar os objetos
+            oHoras = window.document.getElementById('cHoras')
+            oVel = window.document.getElementById('cVel')
+            oRes = window.document.getElementById('result')
+
+            //Crio as variaveis que vão fazer os calculos
+            hora = Number(oHoras.value)
+            vel = Number(oVel.value) 
+            distancia = hora * vel
+            comb_consumido = distancia / 12
+            
+            //Alterar o conteudo da div em tempo real
+            oRes.innerHTML = `Combustivel consumido foi: <strong>${comb_consumido.toFixed(3)}</strong>`
+        }
+    </script>
+</body>
+</html>
