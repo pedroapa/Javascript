@@ -1,0 +1,7 @@
+Este erro acontece que a div que recebe o resultado da 
+operação ja esta mostrando as coisas que esta dentro dela sem mesmo eu ter
+mandado mostrar. 
+Era para mostrar apenas escrito 'Resultado' e quando eu clicasse, mostraria o
+ texto de quando a conta é feita. 
+ O problema foi que eu não coloquei um evento na div, então ela só esta 
+ mostrando o que eu pedi no comando res.innerHTML sem ter disparado o evento.

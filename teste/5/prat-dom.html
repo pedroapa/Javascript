@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando DOM</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        div#result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando DOM</h1>
+    <input type="number" name="tNum1" id="cNum1">
+    <input type="number" name="tNum2" id="cNum2">
+    <input type="button" value="Calcular">
+    <div id="result">Resultado</div>
+    
+    <script>
+        //Criando os objetos
+        var tnum1 = window.document.getElementById('cNum1')
+        var tnum2 = window.document.querySelector('input#cNum2')
+
+        //Os valores
+        var n1 = Number(tnum1.value)
+        var n2 = Number(tnum2.value) 
+        var soma = n1 + n2 
+
+        //Passando o resultado para a div
+        res = window.document.getElementById('result')
+        res.innerHTML = `A Soma entre ${n1} e ${n2} é igual <strong>${soma}</strong> `
+
+    </script>
+</body>
+</html>
