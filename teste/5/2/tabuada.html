@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada de Input</title>
+    <style>
+        body {
+            font: normal 18pt Arial; 
+        }
+
+        input {
+            font: normal 18pt Arial;
+        }
+
+        input#cNum {
+            font: normal 18pt Arial;
+            width: 50px;
+        }
+
+        div#result {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <p>Insira um número no espaço a seguir e descobra sua tabuada</p>
+    <input type="number" name="tNum" id="cNum">
+    <input type="button" value="Descobri">
+    <div id="result">Resultado</div>
+
+    <script>
+        //Escutadores de evento
+        var res = window.document.querySelector('div#result')
+        res.addEventListener('click', tabuada)
+
+        //Função
+        function tabuada(){
+            //Criei o objeto do input
+            var oNum = window.document.querySelector('input#cNum')
+
+            //numero que vou usar
+            var n = document.NumberPatInt(oNum.value)
+            //Number(oNum.value) 
+
+            var cont = 0
+
+            //Criar a tabuada
+            while( cont <= 10 ){
+                res.innerHTML = `${n} x ${cont} = ` + n * cont
+                cont++
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+Regras dos exercícios
+
+1. Utilize um arquivo HTML e uma tag script para resolver esse exercício.
+
+2. Faça do seu jeito, mas lembre-se não esqueça que o objetivo é manipular
+ o DOM, sendo assim, faça seu melhor para fazer todas as operações com
+  a árvore (adição, remoção, busca, etc.)
+
+Exercício 1 – Faça um programa que capture o evento de um input na sua
+ tela e mostre automaticamente a tabuada desse número abaixo.
+
+
+
+
+
+
+
+
+
+
