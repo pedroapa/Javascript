@@ -47,10 +47,12 @@
             //Number(oNum.value) 
 
             var cont = 0
+            var resposta = 0
 
             //Criar a tabuada
             while( cont <= 10 ){
-                res.innerHTML = `${n} x ${cont} = ` + n * cont
+                resposta = n * cont
+                res.innerHTML = `${n} x ${cont} = ${resposta}` 
                 cont++
             }
         }
