@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesmo codigo </title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            display: block;
+            width: 100px;
+        }
+
+        input#btSomar {
+            margin-top: 10px;
+        }
+
+        div#result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>O mesmo código, mas mudando disparo dos eventos</h1>
+
+    <h2>Somar dois números</h2>
+
+    <input type="text" name="txtn1" id="txtn1">
+    <input type="text" name="txtn2" id="txtn2">
+    <input type="button" name="btSomar" id="btSomar" value="Somar">
+    <div id="result">
+        Resultado
+    </div>
+
+    <script>
+        //criando os objetos
+        var botao = document.getElementById('btSomar')
+        var oNum1 = document.getElementById('txtn1')
+        var oNum2 = document.getElementById('txtn2')
+        var res = document.getElementById('result')
+
+        //Criando eventos
+        botao.addEventListener('click', somar)
+
+        function somar(){
+             //Criando variaveis e convertendo os valores para numerico
+            var n1 = Number(oNum1.value)
+            var n2 = Number(oNum2.value)
+            var soma = n1 + n2
+
+            res.innerText = soma
+        }
+
+       
+
+    </script>
+</body>
+</html>
