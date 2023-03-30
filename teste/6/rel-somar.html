@@ -38,13 +38,13 @@
     
     <script>
         function somar(){
-            var n1 = windows.document.getElementId('cNum1');
-            var n2 = windows.document.getElementId('cNum2');
+            var n1 = window.document.getElementById('cNum1');
+            var n2 = window.document.getElementById('cNum2');
             //Não lembro como converte o valor string em númerico...
-            var soma = n1 + n2;
+            var soma = n1.value + n2.value;
 
-            var res = windows.document.getElementId('result');
-            res.value = soma;
+            var res = window.document.getElementById('result');
+            res.innerText = soma;
         }
 
     </script>
