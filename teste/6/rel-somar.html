@@ -31,19 +31,25 @@
     <input type="text" name="tNum1" id="cNum1" size="4" maxlength="15" >
     <p>+</p>
     <input type="text" name="tNum2" id="cNum2" size="4" maxlength="15" >
-    <input type="button" name="tBt" id="cBt" value="Calcular" onclick="somar()">
+    <input type="button" name="tBt" id="cBt" value="somar" onclick="somar()">
     <div id="result">
         Resultado
     </div>
     
     <script>
         function somar(){
-            var n1 = window.document.getElementById('cNum1');
-            var n2 = window.document.getElementById('cNum2');
-            //Não lembro como converte o valor string em númerico...
-            var soma = n1.value + n2.value;
-
+            //Criando objetos
+            var tn1 = window.document.getElementById('cNum1');
+            var tn2 = window.document.getElementById('cNum2');
             var res = window.document.getElementById('result');
+
+            //Convertendo de string para números
+
+            var n1 = number('tn1.value')
+            var n2 = number('tn2.value')
+            var soma = n1 + n2;
+
+            
             res.innerText = soma;
         }
 
