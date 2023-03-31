@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando o DOM</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            padding-left: 20px;
+        }
+
+        div#caixa {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            border: 1px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando os eventos</h1>
+
+    <div id="caixa" onclick="clicar()">
+        Clique aqui
+    </div>
+
+    <script>
+        //Criando objeto
+        oCaixa = document.getElementById('caixa')
+
+        //Criando funções
+        function clicar(){
+            oCaixa = document.style.background-color('red')
+        }
+    </script>
+    
+</body>
+</html>
