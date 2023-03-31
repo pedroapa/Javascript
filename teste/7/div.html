@@ -24,7 +24,7 @@
 <body>
     <h1>Praticando os eventos</h1>
 
-    <div id="caixa" onclick="clicar()">
+    <div id="caixa" onmouseenter="entrou()" onclick="clicar()" onmouseout="saiu()">
         Clique aqui
     </div>
 
@@ -33,11 +33,26 @@
         oCaixa = document.getElementById('caixa')
 
         //Criando funções
+
+        //Entrou na div
+        function entrou(){
+            oCaixa.innerText = 'Entrou'
+        }
+
+        //Clicou na div
         function clicar(){
             oCaixa.innerText = 'Clicou'
             oCaixa.style.background = 'red'
             oCaixa.style.color = 'white'
         }
+
+        //Saiu na div
+        function saiu(){
+            oCaixa.innerText = 'saiu'
+            oCaixa.style.background = 'white'
+            oCaixa.style.color = 'black'
+        }
+
     </script>
     
 </body>
