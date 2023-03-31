@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            width: 100px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio das Mensagens</h1>
+
+    <input type="button" name="tBt1" id="cBt1" value="Botão 1">
+    <input type="button" name="tBt2" id="cBt2" value="Botão 2">
+    <input type="button" name="tBt3" id="cBt3" value="Botão 3">
+
+    <script>
+        //Criando objetos para guardar os elementos
+        var oBt1 = document.getElementById('tBt1')
+        var oBt2 = document.getElementById('tBt2')
+        var oBt3 = document.getElementById('tBt3')
+
+        //Criando os escutadores
+
+        oBt1.addEventListener('click', mostra1)
+        oBt2.addEventListener('click', mostra2)
+        oBt3.addEventListener('click', mostra3)
+
+        function mostra1(){
+            window.alert('Você clicou no 1º botão')
+        }
+
+        function mostra2(){
+            window.alert('Você clicou no 2º botão')
+        }
+
+        function mostra3(){
+            window.alert('Você clicou no 3º botão')
+        }
+        
+    </script>
+    
+</body>
+</html>
