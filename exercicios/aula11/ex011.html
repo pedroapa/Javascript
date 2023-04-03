@@ -10,6 +10,11 @@
             font: normal 18pt Arial;
         }
 
+        input {
+            font: normal 12pt Arial;
+            padding: 5px;
+        }
+
         input#btn {
             width: 100px;
             padding: 5px;
@@ -27,6 +32,24 @@
 
     </div>
 
-    
+    <script>
+        //Criar ligação do JS com input
+        var oNac = window.document.querySelector('input#cNac')
+        var res = window.document.querySelector('div#result')
+        var botao = window.document.querySelector('input#btn')
+
+        //Criar um escutador para funcionar quando clicar
+        botao.addEventListener('click', descobrir)
+
+        function descobrir(){
+                //Testando se é brasileiro
+            if( oNac.value == 'Brasil'){
+                res.innerHTML = `Seu pais de origem é ${oNac.value}, então você é brasileiro`
+            }else{
+                res.innerHTML = `Seu pais de origem é ${oNac.value}, então você é estrangeiro`
+            }
+        }
+        
+    </script>
 </body>
 </html>
