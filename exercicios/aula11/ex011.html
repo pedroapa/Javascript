@@ -35,18 +35,18 @@
     <script>
         //Criar ligação do JS com input
         var oNac = window.document.querySelector('input#cNac')
-        var res = window.document.querySelector('div#result')
-        var botao = window.document.querySelector('input#btn')
+        var oRes = window.document.querySelector('div#result')
+        var oBotao = window.document.querySelector('input#btn')
 
         //Criar um escutador para funcionar quando clicar
-        botao.addEventListener('click', descobrir)
+        oBotao.addEventListener('click', descobrir)
 
         function descobrir(){
                 //Testando se é brasileiro
             if( oNac.value == 'Brasil'){
-                res.innerHTML = `Seu pais de origem é ${oNac.value}, então você é brasileiro`
+                oRes.innerHTML = `Seu pais de origem é ${oNac.value}, então você é brasileiro`
             }else{
-                res.innerHTML = `Seu pais de origem é ${oNac.value}, então você é estrangeiro`
+                oRes.innerHTML = `Seu pais de origem é ${oNac.value}, então você é estrangeiro`
             }
         }
         
