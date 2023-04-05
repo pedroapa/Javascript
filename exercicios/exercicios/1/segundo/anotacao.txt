@@ -1,0 +1,14 @@
+Bora para o segundo exercicios, ele é um pouco parecido com o primeiro, mas muda as fotos dinamicamente 'mais'.
+Vou precisar de imagens de crianças, jovens, velhos do sexo masculino e feminino.
+Quando a pessoa poe uma data invalida, aparece um aviso dizendo que não é valido. Verifica também se o ano é deixado bem branco, selecionando apenas o sexo. Aparece outro erro.
+Ele calcula a idade com base no ano do relogio do computador, também carrega a imagem de forma dinamica.
+
+
+Tenho que definir o intervalo para as idade antes de procurar uma imagem.
+
+bebe dos 0 até 5
+Criança é dos 6 até 13
+adolescente 14 até 18
+jovem dos 18 até 40
+maduro dos 41 até 60
+velho do 60 até 80

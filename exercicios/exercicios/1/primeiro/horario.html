@@ -35,7 +35,7 @@
         if( oHora >= 6 && oHora < 12){
             //Configurando para manha
             oCorpo.style.background = 'var(--manha)'
-            oTexto.innerHTML = 'Agora são '+ oHora+ ' horas.'
+            oTexto.innerText = 'Agora são '+ oHora+ ' horas.'
             //Imagens
             oImg1.style.display = 'block'   //manha
             oImg2.style.display = 'none'    //tarde
@@ -43,7 +43,7 @@
         }else if( oHora >= 12 && oHora < 18){
             //Tarde
             oCorpo.style.background = 'var(--tarde)'
-            oTexto.innerHTML = 'Agora são '+ oHora+ ' horas.'
+            oTexto.innerText = 'Agora são '+ oHora+ ' horas.'
             //Imagens
             oImg1.style.display = 'none'   
             oImg2.style.display = 'block'
@@ -51,7 +51,7 @@
         }else {
             //Noite
             oCorpo.style.background = 'var(--noite)'
-            oTexto.innerHTML = 'Agora são '+ oHora+ ' horas.'
+            oTexto.innerText = 'Agora são '+ oHora+ ' horas.'
             //Imagens
             oImg1.style.display = 'none'   
             oImg2.style.display = 'none'
