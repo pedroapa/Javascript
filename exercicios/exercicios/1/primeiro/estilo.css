@@ -1,0 +1,48 @@
+@charset "utf8";
+
+/*As cores*/
+:root{
+    --manha: #a79908d7;
+    --tarde: #F77916;
+    --noite: #545454;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 18pt Arial;
+    background-color: rgba(34, 34, 34, 0.301);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin: 30px;
+}
+
+div {
+    width: 600px;
+    height: 240px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.548);
+}
+
+div > p {
+    margin-bottom: 10px;
+}
+
+div > img {
+    border-radius: 100%;
+    margin: auto;
+}
+
+footer {
+    color: white;
+    margin-top: 15px;
+}

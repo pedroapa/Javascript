@@ -1,0 +1,1 @@
+Pensei que precisava ir editando um elemento img para ir mudando sua src com outras imagens, mas posso seguir umas das filosofias do JS, que é por todas as opcioes na mesa, mas escolher o que vai ser mostrado, então neste cenario, eu colocaria as 3 imagens, mas mostraria apenas uma, as outras estariam ocultas. 

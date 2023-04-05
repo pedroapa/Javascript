@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <h1>Hora do Dia</h1>
+    
+    <div>
+        <p>Agora são horas.</p>
+        <img src="img/campo.jpg" alt="Campo de manhã" id="manha">
+        <img src="img/por-do-sol.jpg" alt="Barco no por do sol" id="tarde">
+        <img src="img/estrada-noite.jpg" alt="Uma estrada de noite" id="noite">
+    </div>
+    
+    <footer>CursoEmVideo</footer>
+
+    <script>
+        //Criando objeto corpo, p e imagem
+        oCorpo = window.document.body
+        oTexto = window.document.getElementsByTagName('p')[0]
+        oImg1 = window.document.getElementById('manha')
+        oImg2 = window.document.getElementById('tarde')
+        oImg3 = window.document.getElementById('noite')
+
+        //Criando variavel para guardar as horas
+        oAgora = new Date()
+        oHora = oAgora.getHours()
+    
+        //Criar o ifs
+        if( oHora >= 6 && oHora < 12){
+            //Configurando para manha
+            oCorpo.style.background = 'var(--manha)'
+            oTexto.innerHTML = 'Agora são '+ oHora+ ' horas.'
+            //Imagens
+            oImg1.style.display = 'block'   //manha
+            oImg2.style.display = 'none'    //tarde
+            oImg3.style.display = 'none'    //noite
+        }else if( oHora >= 12 && oHora < 18){
+            //Tarde
+            oCorpo.style.background = 'var(--tarde)'
+            oTexto.innerHTML = 'Agora são '+ oHora+ ' horas.'
+            //Imagens
+            oImg1.style.display = 'none'   
+            oImg2.style.display = 'block'
+            oImg3.style.display = 'none'
+        }else {
+            //Noite
+            oCorpo.style.background = 'var(--noite)'
+            oTexto.innerHTML = 'Agora são '+ oHora+ ' horas.'
+            //Imagens
+            oImg1.style.display = 'none'   
+            oImg2.style.display = 'none'
+            oImg3.style.display = 'block'
+        }
+
+    </script> 
+</body>
+</html>
