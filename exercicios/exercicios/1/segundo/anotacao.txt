@@ -12,3 +12,11 @@ adolescente 14 até 18
 jovem dos 18 até 40
 maduro dos 41 até 60
 velho do 60 até 80
+
+
+Para resolver este exercicio vou usar if, else junto com swicth, porque peguei muitas imagens da internet, então o if e else aninhado ia dar bastante. Vou usar primeiro if e else para classificar a idade, como eu ja nomeia legal as imagens, se a string aparencia ter o mesmo nome dos casos, vai mostrar tal idade.
+
+
+talves só com if e else if ja resolva. Não vou precisar classificar.
+
+vou usar um if no começo para separa entre sexo masculino e feminino. Depois analisa a idade

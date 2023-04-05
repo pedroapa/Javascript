@@ -34,6 +34,12 @@ input#cBtn {
     padding: 3px;
 }
 
+div#result {
+    width: 250px;
+    height: 180px;
+    border-radius: 100%;
+}
+
 footer {
     color: white;
     margin-top: 15px;
