@@ -1,6 +1,10 @@
-Bora para o segundo exercicios, ele é um pouco parecido com o primeiro, mas muda as fotos dinamicamente 'mais'.
-Vou precisar de imagens de crianças, jovens, velhos do sexo masculino e feminino.
-Quando a pessoa poe uma data invalida, aparece um aviso dizendo que não é valido. Verifica também se o ano é deixado bem branco, selecionando apenas o sexo. Aparece outro erro.
+Bora para o segundo exercicios, ele é um pouco parecido com o primeiro, mas 
+muda as fotos dinamicamente 'mais'.
+Vou precisar de imagens de crianças, jovens, velhos do sexo masculino e 
+feminino.
+Quando a pessoa poe uma data invalida, aparece um aviso dizendo que não é 
+valido. Verifica também se o ano é deixado bem branco, selecionando apenas o 
+sexo. Aparece outro erro.
 Ele calcula a idade com base no ano do relogio do computador, também carrega a imagem de forma dinamica.
 
 
@@ -14,9 +18,28 @@ maduro dos 41 até 60
 velho do 60 até 80
 
 
-Para resolver este exercicio vou usar if, else junto com swicth, porque peguei muitas imagens da internet, então o if e else aninhado ia dar bastante. Vou usar primeiro if e else para classificar a idade, como eu ja nomeia legal as imagens, se a string aparencia ter o mesmo nome dos casos, vai mostrar tal idade.
+Para resolver este exercicio vou usar if, else junto com swicth, porque peguei
+ muitas imagens da internet, então o if e else aninhado ia dar bastante. Vou 
+ usar primeiro if e else para classificar a idade, como eu ja nomeia legal as 
+ imagens, se a string aparencia ter o mesmo nome dos casos, vai mostrar tal 
+ idade.
 
 
 talves só com if e else if ja resolva. Não vou precisar classificar.
 
-vou usar um if no começo para separa entre sexo masculino e feminino. Depois analisa a idade
+vou usar um if no começo para separa entre sexo masculino e feminino. Depois 
+analisa a idade
+
+Não estou conseguindo trabalhar com o input radio para saber se o usuario 
+escolheu o sexo masculino ou feminino, sem isso não da para usar o ifs e 
+escolher qual imagem mostrar.
+
+
+OBS: Por usar o JavaScript, as imagens sumiram mesmo eu não tendo mandado, não 
+sei porque isso aconteceu.
+
+
+
+
+
+

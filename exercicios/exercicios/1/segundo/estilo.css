@@ -34,10 +34,11 @@ input#cBtn {
     padding: 3px;
 }
 
-div#result {
+div#result > img{
+    margin: auto;
     width: 250px;
     height: 180px;
-    border-radius: 100%;
+    border-radius: 90%;
 }
 
 footer {

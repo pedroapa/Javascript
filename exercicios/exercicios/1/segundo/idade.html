@@ -13,11 +13,11 @@
         <p><label for="cNasc">Ano de Nascimento: </label>
         <input type="number" name="tNasc" id="cNasc"></p>
         <p><label for="">Sexo: </label> 
-        <input type="radio" name="sexo" id="1" checked> Masculino
-        <input type="radio" name="sexo" id="2"> Feminino</p>
+        <input type="radio" name="tSexo" id="cMas" checked> Masculino
+        <input type="radio" name="tSexo" id="cFem"> Feminino</p>
         <input type="button" id="cBtn" value="Verificar">
         <div id="result">
-            <img src="img/bebe-menina.jpg" alt="Uma bebezinha">
+            <img src="img/bebe-menina.jpg" alt="Uma bebezinha">  
             <img src="img/bebe-menino.jpg" alt="Um bebezinho">
             <img src="img/garota.jpg" alt="Uma garota de 8 anos">
             <img src="img/garoto.jpg" alt="Um garoto de 8 anos">
@@ -29,9 +29,43 @@
             <img src="img/homem-velho.png" alt="Um homem de 50 anos">
             <img src="img/idosa.jpg" alt="Uma mulher de 70 anos">
             <img src="img/idoso.jpg" alt="Um homem de 70 anos">
-            <p>Preencha os dados acima para ver o resultado!</p>
         </div>
+        <p>Preencha os dados acima para ver o resultado!</p>
     </div>
+
+    <script>
+        //Criando objetos/ligação
+        oNasc = window.document.querySelector('input#cNasc')
+        oSexo1 = window.document.querySelector('input#cMas')
+        oSexo2 = window.document.querySelector('input#cFem')
+        oBotao = window.document.querySelector('input#cBtn')
+        oRes = window.document.querySelector('div#result')
+
+        //Criando um escutador, disparador de eventos
+        oBotao.addEventListener('click', verificar)   
+
+        function verificar(){
+                //Pegando os valores
+            oData = new Date()
+            oIdade = Number(oData.getFullYear()) - Number(oNasc.value)
+            oMasc = oSexo1.value
+            oFem = oSexo2.value
+
+            oRes.innerText += 'Sua idade é ' + oIdade
+            oRes.innerText += '     O valor do Sexo masculino é ' + oMasc
+            oRes.innerText += '     E o sexo feminino é ' + oFem
+
+            if( oMasc){
+                window.alert('Você escolheu sexo masculino')
+            }
+
+            if( oFem ){
+                window.alert('Você escolheu sexo feminino')
+            }
+
+        }
+
+    </script>
     <footer>CursoemVideo</footer>
 </body>
 </html>
