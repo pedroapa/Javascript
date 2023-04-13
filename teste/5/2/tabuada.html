@@ -47,14 +47,13 @@
             var cont = 0
             var resposta = 0
 
+            res.innerText = ''
+
             //Criar a tabuada
             while( cont <= 10 ){
                 resposta = n * cont
-                
-                
-                res.write = `${n} x ${cont} = <strong>${resposta}</strong> <br>`
-                cont++
-                
+                res.innerHTML += `<br>${n} x ${cont} = <strong>${resposta}</strong>`
+                cont++      
             }
         }
         
