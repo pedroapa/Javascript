@@ -10,7 +10,17 @@ Exercício 1 – Faça um programa que capture o evento de um input na sua
  tela e mostre automaticamente a tabuada desse número abaixo.
 
 
+Analisando o codigo um tempo depois com mais madurecimento
 
+Analisando o codigo e depois de ter madurecido o conhecimento. Primeiro, estou tentando escrever na div#result de uma 
+forma estranha. Agora resolveria de um jeito que estou acostumado e do jeito que eu tinha feito, parece que mistura 
+duas formas de resolver diferente.
+
+
+Do jeito que estou habituado. Depois de criar um objeto para a div e selecionar o elemento. Simplesmente mandaria 
+escrever nele com HTML as respostas de cada calculo.
+
+Do jeito que fiz, parece que não tinha criado o objeto para div#res.
 
 
 
