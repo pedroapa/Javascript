@@ -23,9 +23,9 @@ function contar(){
         res.innerText = 'Impossível contar!'
     }else{
         //Proteção quando n passos = 0
-        if( vPasso.value == 5 ){
+        if( vPasso == 5 ){
             window.alert('Passo Invalido! Considerando PASSO 1')
-            vPasso.value = 1
+            vPasso = 1
         }
 
         //Limpa o que esta escrito na div
