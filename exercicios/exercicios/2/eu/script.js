@@ -9,21 +9,16 @@ var res = document.querySelector('div#result')
 vBotao.addEventListener('click', contar)
 
 function contar(){
-    /*
     //Pegar os valores inseridos
     var vInicio = Number(vInputIni.value)
     var vFim = Number(vInputFim.value)
-    var vPasso = Number(vInputPas.value)
-    */
-    var vInicio = 10
-    var vFim = 40
-    var vPasso = 5
+    var vPasso = Number(vInputPas.value) 
 
     if( vInputIni.value.length == 0 || vInputFim.value.length == 0 || vInputPas.value.length == 0){
         res.innerText = 'Impossível contar!'
     }else{
         //Proteção quando n passos = 0
-        if( vPasso == 5 ){
+        if( vPasso == 0 ){
             window.alert('Passo Invalido! Considerando PASSO 1')
             vPasso = 1
         }
@@ -32,7 +27,7 @@ function contar(){
         res.innerText = ''
     
         while( vInicio <= vFim ){
-            res.innerHTML += `${vInicio} --> `
+            res.innerHTML += `${vInicio} &#128073 `
             vInicio += vPasso
         }
         res.innerText += '#'
