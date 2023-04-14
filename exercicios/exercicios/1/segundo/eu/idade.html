@@ -32,40 +32,8 @@
         </div>
         <p>Preencha os dados acima para ver o resultado!</p>
     </div>
-
-    <script>
-        //Criando objetos/ligação
-        oNasc = window.document.querySelector('input#cNasc')
-        oSexo1 = window.document.querySelector('input#cMas')
-        oSexo2 = window.document.querySelector('input#cFem')
-        oBotao = window.document.querySelector('input#cBtn')
-        oRes = window.document.querySelector('div#result')
-
-        //Criando um escutador, disparador de eventos
-        oBotao.addEventListener('click', verificar)   
-
-        function verificar(){
-                //Pegando os valores
-            oData = new Date()
-            oIdade = Number(oData.getFullYear()) - Number(oNasc.value)
-            oMasc = oSexo1.value
-            oFem = oSexo2.value
-
-            oRes.innerText += 'Sua idade é ' + oIdade
-            oRes.innerText += '     O valor do Sexo masculino é ' + oMasc
-            oRes.innerText += '     E o sexo feminino é ' + oFem
-
-            if( oMasc){
-                window.alert('Você escolheu sexo masculino')
-            }
-
-            if( oFem ){
-                window.alert('Você escolheu sexo feminino')
-            }
-
-        }
-
-    </script>
     <footer>CursoemVideo</footer>
+
+    <script src="javascript.js"></script>
 </body>
 </html>
