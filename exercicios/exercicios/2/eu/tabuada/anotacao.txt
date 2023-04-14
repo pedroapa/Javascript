@@ -1,0 +1,13 @@
+No video o professor diz que tem um select, mas 
+depois muda de ideia e diz que é uma lista, 
+resumindo, não estou conseguindo fazer.
+
+tentei por select e fica formatado todo estranho.
+Tentei por lista e não da para selecionar como o
+professor estava fazendo
+
+Empaquei
+
+
+
+
