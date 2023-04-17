@@ -38,7 +38,13 @@ escolher qual imagem mostrar.
 OBS: Por usar o JavaScript, as imagens sumiram mesmo eu não tendo mandado, não 
 sei porque isso aconteceu.
 
-
+#Problema da mensagem que não sumia 
+Quando aparecia a imagem, era para o texto que diz 'Preencha os dados acima para ver o resultado!' desaparecer, mas
+isso não acontecia. Analisando o codigo encontrei o que estava acontecendo, eu tinha criado duas divs, uma que 
+de id de conteudo, onde criaria o cardzinho branco e outra com id result que receberia a imagem. Porem, confundi,
+eu acho e esta mensagem tinha colocado fora da div#reslt, dentro da conteudo e quando colocava a imagem não 
+subescrevia porque não estava dentro da div#result. Então eu arrumei, deixei parecido com o do professor, começando 
+usando um section para guardar todo conteudo (cardzinho) e coloquei o texto na div#result. Problema resolvido.
 
 
 
