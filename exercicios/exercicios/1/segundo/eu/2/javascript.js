@@ -11,7 +11,7 @@
         //Pegando os valores
     oData = new Date()
     oIdade = Number(oData.getFullYear()) - Number(oNasc.value)
-    var img = document.createElement(img)
+    var img = document.createElement('img')
     img.setAttribute('id', 'imagem')
     
     var genero = ''
@@ -28,7 +28,7 @@
             //Criança
             img.setAttribute('src', 'img/garoto.jpg')
         }else if( oIdade <= 18 ){
-
+            img.setAttribute('src', 'img/garoto.jpg')
         }
 
         

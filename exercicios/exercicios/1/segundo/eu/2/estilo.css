@@ -26,6 +26,10 @@ div#conteudo {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.534);
 }
 
+div#result {
+    text-align: center;
+}
+
 p {
     margin: 10px 0px;
 }
