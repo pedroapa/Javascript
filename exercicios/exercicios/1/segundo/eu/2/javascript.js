@@ -23,12 +23,16 @@
         //descobrir a imagem a ser usada
         if( oIdade >= 0 && oIdade <= 5 ){
             //Bebe
+            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/bebe-menino.jpg')
         }else if( oIdade <= 13){
             //Criança
+            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/garoto.jpg')
         }else if( oIdade <= 18 ){
-            img.setAttribute('src', 'img/garoto.jpg')
+            //Adolescente
+            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
+            img.setAttribute('src', 'img/adolescente-homem.jpg')
         }
 
         
@@ -39,5 +43,6 @@
     }
 
     oRes.appendChild(img)
-
  }
+
+
