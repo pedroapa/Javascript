@@ -18,31 +18,25 @@
 
     if( oSexo[0].checked){
         //Sexo masculino
-        genero = 'Homem'
+        genero = 'homem'
 
         //descobrir a imagem a ser usada
         if( oIdade >= 0 && oIdade <= 5 ){
             //Bebe
-            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/bebe-menino.jpg')
         }else if( oIdade <= 13 ){
             //Criança
-            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/garoto.jpg')
         }else if( oIdade <= 18 ){
             //Adolescente
-            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/adolescente-homem.jpg')
         }else if( oIdade <= 40 ){
             //Jovem
-            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/homem.jpg')
         }else if( oIdade <= 60 ){
             //Maduro
-            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/homem-velho.png') 
         }else {
-            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/idoso.jpg')
         }
 
@@ -50,9 +44,29 @@
     }
 
     if( oSexo[1].checked){
-        genero = 'Mulher'
-    }
+        genero = 'mulher'
 
+        //descobrir a imagem a ser usada
+        if( oIdade >= 0 && oIdade <= 5 ){
+            //Bebe
+            img.setAttribute('src', 'img/bebe-menina.jpg')
+        }else if( oIdade <= 13 ){
+            //Criança
+            img.setAttribute('src', 'img/garota.jpg')
+        }else if( oIdade <= 18 ){
+            //Adolescente
+            img.setAttribute('src', 'img/adolescente-mulher.jpg')
+        }else if( oIdade <= 40 ){
+            //Jovem
+            img.setAttribute('src', 'img/mulher.jpg')
+        }else if( oIdade <= 60 ){
+            //Maduro
+            img.setAttribute('src', 'img/mulher-velha.jpg') 
+        }else {
+            img.setAttribute('src', 'img/idosa.jpg')
+        }
+    }
+    oRes.innerHTML = `Detectamos ${genero} com ${oIdade} anos <br>`
     oRes.appendChild(img)
  }
 
