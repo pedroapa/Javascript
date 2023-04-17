@@ -42,8 +42,10 @@ div#result > img{
     margin: auto;
     width: 250px;
     height: 180px;
-    border-radius: 90%;
+    border-radius: 50%;
+    padding: 5px;
 }
+
 
 footer {
     color: white;

@@ -25,7 +25,7 @@
             //Bebe
             oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/bebe-menino.jpg')
-        }else if( oIdade <= 13){
+        }else if( oIdade <= 13 ){
             //Criança
             oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/garoto.jpg')
@@ -33,6 +33,17 @@
             //Adolescente
             oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
             img.setAttribute('src', 'img/adolescente-homem.jpg')
+        }else if( oIdade <= 40 ){
+            //Jovem
+            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
+            img.setAttribute('src', 'img/homem.jpg')
+        }else if( oIdade <= 60 ){
+            //Maduro
+            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
+            img.setAttribute('src', 'img/homem-velho.png') 
+        }else {
+            oRes.innerHTML = `Detectamos homem com ${oIdade} anos <br>`
+            img.setAttribute('src', 'img/idoso.jpg')
         }
 
         
