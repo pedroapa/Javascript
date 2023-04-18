@@ -26,10 +26,19 @@ function contar(){
         //Limpa o que esta escrito na div
         res.innerText = ''
     
-        while( vInicio <= vFim ){
-            res.innerHTML += `${vInicio} &#128073 `
-            vInicio += vPasso
+        //Se fim é maior entao
+        if( vFim > vInicio ){
+            while( vInicio <= vFim ){
+                res.innerHTML += `${vInicio} &#128073 `
+                vInicio += vPasso
+            }
+        }else {
+            while( vInicio >= vFim ){
+                res.innerHTML += `${vInicio} &#128073 `
+                vInicio -= vPasso
+            }
         }
+        
         res.innerText += '#'
     }
 
