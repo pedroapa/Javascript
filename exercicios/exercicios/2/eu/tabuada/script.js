@@ -12,7 +12,7 @@ function mostrarTabuada(){
     var num = Number(vInputNum.value)
 
     if(vInputNum.value.length == 0){
-        window.alert('Por favor dite um número!')
+        window.alert('Por favor digite um número!')
     }else {
         opt.style.display = 'none'
 
