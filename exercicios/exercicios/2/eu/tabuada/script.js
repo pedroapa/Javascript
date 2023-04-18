@@ -4,7 +4,6 @@ var vBotao = document.getElementById('btn')
 var vSelect = document.getElementById('cTabuada')
 var opt = document.getElementById('exp')
 var res = document.getElementById('result')
-var rodou = false
 
 function mostrarTabuada(){
 
@@ -13,20 +12,13 @@ function mostrarTabuada(){
     opt.style.display = 'none'
 
     for(var i = 1; i <= 10; i++){
-        
-        if(!rodou){
-            //criando elemento dinamicamente
-            var linha = document.createElement('option')
-            linha.setAttribute('id', i)
-            linha.innerHTML += `${num} * ${i} = ${num*i}<br>`
-        }
-        
-        
+        //criando elemento dinamicamente
+        var linha = document.createElement('option')
+        linha.setAttribute('id', i)
+        linha.innerHTML += `${num} * ${i} = ${num*i}<br>`
         //mostrando na tela
         vSelect.appendChild(linha)
     }
-
-   rodou = true
 }
 
 
