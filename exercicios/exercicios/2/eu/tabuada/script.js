@@ -21,14 +21,14 @@ function mostrarTabuada(){
                 //criando elemento dinamicamente
                 var linha = document.createElement('option')
                 linha.setAttribute('id', i)
-                linha.innerHTML += `${num} * ${i} = ${num * i}<br>`
+                linha.innerHTML = `${num} * ${i} = ${num * i}<br>`
                 //mostrando na tela
                 vSelect.appendChild(linha)
                 rodou = true
             }
         }else {
             for(var i = 1; i <= 10; i++){
-                opcao = document.getElementById(i)
+                var opcao = document.getElementById(i)
                 opcao.innerHTML = `${num} * ${i} = ${num * i}<br>`
             }
         }
