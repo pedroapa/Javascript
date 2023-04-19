@@ -13,6 +13,7 @@ header {
 section {
     background-color: white;
     border-radius: 10px;
+    text-align: left;
     padding: 15px;
     width: 500px;
     margin: auto;
