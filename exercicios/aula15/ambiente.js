@@ -1,3 +1,10 @@
 let num = [5, 8, 2, 9, 3]
-
 console.log(num)
+num.push('1')
+console.log(num)
+console.log(`O vetor tem ${num.length} posições.`)
+console.log(`Primeiro valor é ${num[0]}`)
+console.log('Agora vamos organizar na ordem crescente: ')
+num.sort()
+console.log(num)
+typeof(num)
