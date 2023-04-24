@@ -7,4 +7,9 @@ console.log(`Primeiro valor é ${num[0]}`)
 console.log('Agora vamos organizar na ordem crescente: ')
 num.sort()
 console.log(num)
-typeof(num)
+let pos = num.indexOf(4)
+if(pos == -1){
+    console.log('O valor não foi encontrado')
+}else{
+    console.log(`O valor esta na posição ${pos}`)
+}
