@@ -1,0 +1,3 @@
+Exercício:
+Com base neste código HTML, crie a função soma e o evento addEventListener que irá receber os
+ valores dos campos “inputValorA” e “inputValorB”.

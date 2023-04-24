@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercicio Eventos</title>
+</head>
+
+<body>
+    <div id="calculo">
+        <!-- Crie os dois campos chamados "inputValorA" e "inputValorB" -->
+        <fieldset>
+            <label for="inputValorA">Valor de A:</label>
+            <input id="inputValorA" type="number" placeholder="Digite o valor de A:">
+        </fieldset>
+        <fieldset>
+            <label for="inputValorB">Valor de B:</label>
+            <input id="inputValorB" type="number" placeholder="Digite o valor de B:">
+        </fieldset>
+
+        <!-- Criar um botão chamado SOMA -->
+        <button class="calculo" type="submit">Somar</button>
+    </div>
+    <script>
+        //Objetos
+        let botao = document.querySelector('button.calculo')
+
+        //Escutador
+        botao.addEventListener('click', somar)
+
+        //Funçao
+        function somar(){
+            //Objeto
+            let inputA = document.querySelector('input#inputValorA')
+            let inputB = document.querySelector('input#inputValorB')
+
+            //Valores
+            let valorA = Number(inputA.value)
+            let valorB = Number(inputB.value)
+
+            window.alert(`O resultado é ${valorA * valorB}`)
+        }
+    </script>
+</body>
+
+</html>
