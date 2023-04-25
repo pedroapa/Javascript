@@ -4,6 +4,7 @@ let res = document.querySelector('div#result')
 function acharMenor(){
     let tamanho = vet.length
     let menor = vet[0]
+    //window.alert(`TAMANHO: ${tamanho} e MENOR: ${menor}`)
     
     for(let c = 0; c < tamanho; c++){
         if(vet[c] < menor){
@@ -11,6 +12,7 @@ function acharMenor(){
         }
     }
     return menor
+    
 }
 
 function iniciar(){

@@ -1,15 +1,18 @@
 function acharMenor(){
-    //let tamanho = arguments.lenght
-    let menor = arguments[0]
+    let tamanho = vet.length
+    let menor = vet[0]
+    console.log(`TAMANHO: ${tamanho} e MENOR: ${menor}`)
     
-    for(let c = 1; c < arguments.length; c++){
+    for(let c = 0; c < tamanho; c++){
+
         if(arguments[c] < menor){
             menor = vet[c]
         }
     }
-    return menor
     
+    return menor
 }
 
-const vet = [17, 2, 28]
+const vet = [3, 55, 14]
 let valorMenor = acharMenor(...vet)
+console.log(`O menor número do vetor é: ${valorMenor}`)
