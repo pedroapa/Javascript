@@ -2,3 +2,9 @@
 Modifique os elementos do array de modo a a sequência de números ficar do contrário.
 Ou seja, se digitou: 1,2,3
 Vai aparecer: 3,2,1
+
+será que ta dando problema porque o prompt pega o valor digitado e considera 
+ele como string? e o codigo JS que estou usando estou inserindo os números 
+direto no vetor, então ele são exatamente do tipo númeral.
+Converti os numeros pegados por prompt para do tipo numeral e resolveu
+
