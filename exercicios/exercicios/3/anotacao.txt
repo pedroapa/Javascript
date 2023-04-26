@@ -63,5 +63,13 @@ menor
 soma de todos 
 a media de todos
 
+pra ficar criando elemento option, fiz usando laço, como vou criar varios 
+elementos com ids diferentes, sendo que tenho que ficar clicando para 
+adicionar, mas sem entrar de novo na função?
+fazer ja estar dentro de um laço e quando a pessoa adiciona, o elemento é 
+adicionado dentro do HTML.
+
+poderia fazer a primeira vez sem o laço para depois implementar
+
 
 
