@@ -1,0 +1,19 @@
+observação, tem um input que aceita um número no intervalo de 1 a 100.
+Tem um select que mostra os valores que estão no vetor, quando insere, ele é 
+atualizado
+E um botão para finalizar, que faz as operações de encontrar o maior número,
+ o menor, a soma de todos e a media.
+
+proteção:
+não inserir o mesmo número duas vezes
+não inserir nada
+inserir um valor invalido (fora da faixa)
+
+primeiro cria a funcionalidade e depois implementar a proteção.
+será que na proteção da para criar primeiro o fluxograma antes de criar o 
+codigo?
+
+fogo de quando criar o fluxograma levar em conta que é um evento, que só 
+será adicionado quando for clicado.
+
+antes de adicionar, saber se o número já existe dentro do vetor.
