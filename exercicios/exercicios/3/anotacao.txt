@@ -17,3 +17,51 @@ fogo de quando criar o fluxograma levar em conta que é um evento, que só
 será adicionado quando for clicado.
 
 antes de adicionar, saber se o número já existe dentro do vetor.
+
+
+OBSERVAÇÃO
+mesmo que o valor do input se transforme para zero dentro da variavel 'n'. 
+No if estou testando o tamanho da propriedade value do objeto 'num'. 
+
+Transformando o value do input para o tipo numero, se o campo estiver vazio 
+vai virar zero e neste exercicio não precisaria ver o tamanho do value 
+então, já que zero não esta na faixa estimada.
+
+
+
+mesmo que o valor do input se transforme para zero dentro da variavel 'n'. No if estou testando o tamanho da propriedade value do objeto 'num'. 
+
+Transformando o value do input para o tipo numero, se o campo estiver vazio
+ vai virar zero e neste exercicio não precisaria ver o tamanho do value 
+ então, já que zero não esta na faixa estimada.
+
+falta quantos para chegar no 9 e este numero é somado para os dois numeros, 
+quando a unidade do numero de cima for maior que o de baixo, não precisa 
+fazer isso.
+
+eu iria usar apenas um if simples para as condiçoes de proteção e deixar a 
+função desenrolar fazendo as coisas, mas pode acontecer de uma situação não 
+pensada e um número invalido for salvo no vetor e dar erro que será mais 
+dificil de encontrar. 
+Ja que uma vez, se o numero for invalido, vai para um lugar oposto de quando
+ é valido, seguindo esse racicionio os dois nunca podem acontecem ao mesmo 
+ tempo.
+Sendo que sem isso, depois de entrar no if que aparece uma mensagem de erro, iria guardar no vetor o valor invalido porque a execução iria continuar.
+
+5, 3, 4, 3
+
+problema de usar aquela função que ela manda qual index a elemento esta, estão só posso usar ela no teste para ver se o valor é igual a -1
+
+Quando o número não esta dentro, da -1
+
+Mano aonde vai parar o laço de repetição no exercicio?? do jeito que estou 
+fazendo, estou fazendo sem. É meio estranho o JS interagir com o laço, 
+porque posso usar função somado com evento.
+
+Achar o maior 
+menor 
+soma de todos 
+a media de todos
+
+
+
