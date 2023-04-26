@@ -13,6 +13,6 @@ function acharMenor(){
     return menor
 }
 
-const vet = [3, 55, 14]
+const vet = [11, 35, 5]
 let valorMenor = acharMenor(...vet)
 console.log(`O menor número do vetor é: ${valorMenor}`)

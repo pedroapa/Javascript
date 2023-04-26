@@ -17,7 +17,7 @@ function acharMenor(){
 
 function iniciar(){
     for(let c = 0; c < 3; c++){
-        vet.push(window.prompt(`Digite o ${c+1}° número: `))
+        vet.push( Number(window.prompt(`Digite o ${c+1}° número: `)) )
     }
     res.innerHTML = `O vetor ficou assim: [${vet}]`
 
