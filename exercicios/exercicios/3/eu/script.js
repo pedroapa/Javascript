@@ -5,8 +5,7 @@ res = document.querySelector('div#result')
 
 function adicionar(){
     if(viuRelatorio){
-        //Limpar o vetor
-        limpaVet(...vet)
+        res.innerHTML = ''
         viuRelatorio = false
     }
 
@@ -67,21 +66,12 @@ function media(){
     return media
 }
 
-function limpaVet(){
-    for(let c = 0; c < arguments.length; c++){
-        vet.pop()
-    }
-
-    res.innerHTML = ''
-    selete.innerHTML = '' 
-}
-
 function finalizar(){
     res.innerHTML += `<p>Ao todo, temos ${arguments.length} cadastrados.</p>`
-    res.innerHTML += `<p>O maior valor informado foi ${acharMaior(...vet)}</p>`
-    res.innerHTML += `<p>O menor valor informado foi ${acharMenor(...vet)}</p>`
-    res.innerHTML += `<p>Somando todos os valores, temos ${somaTudo(...vet)}</p>`
-    res.innerHTML += `<p>A média dos valores digitados é ${media(...vet)}</p>`
+    res.innerHTML += `<p>O maior valor informado foi ${acharMaior(...vet)}.</p>`
+    res.innerHTML += `<p>O menor valor informado foi ${acharMenor(...vet)}.</p>`
+    res.innerHTML += `<p>Somando todos os valores, temos ${somaTudo(...vet)}.</p>`
+    res.innerHTML += `<p>A média dos valores digitados é ${media(...vet)}.</p>`
     viuRelatorio = true
 }
 
