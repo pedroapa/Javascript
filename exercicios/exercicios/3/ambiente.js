@@ -12,8 +12,9 @@ function limpaVet(){
     console.log(`O vetor se encontra assim ${vet} agora`)
     */
 
-    for(let c = 1; c < arguments.length; c++){
+    for(let c = 0; c < arguments.length; c++){
         console.log(`O vetor se encontra assim  ${vet}`)
+        console.log(c)
         vet.pop()
     }
     
@@ -22,6 +23,8 @@ function limpaVet(){
 let vet = [5, 1, 2, 9]
 
 limpaVet(...vet)
+
+console.log(`Ultima mensagem: O vetor se encontra assim  ${vet}`)
 
 
 //console.log(vet.length)
