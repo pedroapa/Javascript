@@ -14,12 +14,13 @@ function adicionar(){
     n = Number(num.value)
         
     if( n < 1 || n > 100 || num.value.length == 0 || vet.indexOf(n) != -1){
-        //Mensagem que o numero ja existe
+        //Mensagem de erro
         window.alert(`Valor invalido ou ja encontrado na lista`)
         num.value = ''
     }else{
         //Guardar o valor dentro do vetor
         vet.push(n)
+        //Limpa o valor do input
         num.value = ''
 
             //Mostrar dentro do select
@@ -27,11 +28,7 @@ function adicionar(){
         let opcao = document.createElement('option')
         opcao.innerHTML = `Valor ${n} adicionado`
         selete.appendChild(opcao)
-
-        console.log(`DENTRO DO VETOR: `+ vet)
     }
-
-    console.log(`Testando se o valor esta no vetor: ${vet.indexOf(n)}`)
 }
 
 function acharMaior(){
@@ -71,13 +68,12 @@ function media(){
 }
 
 function limpaVet(){
-    res.innerHTML = ''
-    selete.innerHTML = ''
-    
     for(let c = 0; c < arguments.length; c++){
         vet.pop()
     }
-    
+
+    res.innerHTML = ''
+    selete.innerHTML = '' 
 }
 
 function finalizar(){
