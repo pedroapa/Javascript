@@ -4,27 +4,33 @@ selete = document.querySelector('select#selNum')
 res = document.querySelector('div#result')
 
 function adicionar(){
-    //Pegar o valor
-    n = Number(num.value)
-    
-    if( n < 1 || n > 100 || num.value.length == 0 || vet.indexOf(n) != -1){
-        //Mensagem que o numero ja existe
-        window.alert(`Valor invalido ou ja encontrado na lista`)
-        num.value = ''
+    if(viuRelatorio){
+        res.innerHTML = ''
+        //Limpar o vetor
+        limpaVet(...vet)
+        
     }else{
-        //Guardar o valor dentro do vetor
-        vet.push(n)
-        num.value = ''
+        //Pegar o valor
+        n = Number(num.value)
+        
+        if( n < 1 || n > 100 || num.value.length == 0 || vet.indexOf(n) != -1){
+            //Mensagem que o numero ja existe
+            window.alert(`Valor invalido ou ja encontrado na lista`)
+            num.value = ''
+        }else{
+            //Guardar o valor dentro do vetor
+            vet.push(n)
+            num.value = ''
 
-            //Mostrar dentro do select
-        //Criando um elemento
-        let opcao = document.createElement('option')
-        opcao.innerHTML = `Valor ${n} adicionado`
-        selete.appendChild(opcao)
+                //Mostrar dentro do select
+            //Criando um elemento
+            let opcao = document.createElement('option')
+            opcao.innerHTML = `Valor ${n} adicionado`
+            selete.appendChild(opcao)
 
-        console.log(`DENTRO DO VETOR: `+ vet)
+            console.log(`DENTRO DO VETOR: `+ vet)
+        }
     }
-
     
 
     console.log(`Testando se o valor esta no vetor: ${vet.indexOf(n)}`)
@@ -66,14 +72,25 @@ function media(){
     return media
 }
 
+function limpaVet(){
+    res.innerHTML = 'Cheguei aqui'
+    
+    for(let c = 1; c < arguments.length; c++){
+        vet.pop()
+    }
+    
+    res.innerHTML =+ 'Apagado com sucesso!'
+}
+
 function finalizar(){
     res.innerHTML += `<p>Ao todo, temos ${arguments.length} cadastrados.</p>`
     res.innerHTML += `<p>O maior valor informado foi ${acharMaior(...vet)}</p>`
     res.innerHTML += `<p>O menor valor informado foi ${acharMenor(...vet)}</p>`
     res.innerHTML += `<p>Somando todos os valores, temos ${somaTudo(...vet)}</p>`
     res.innerHTML += `<p>A média dos valores digitados é ${media(...vet)}</p>`
+    viuRelatorio = true
 }
 
 //Criação do vetor
 const vet = []
-
+let viuRelatorio = false

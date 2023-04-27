@@ -72,4 +72,5 @@ adicionado dentro do HTML.
 poderia fazer a primeira vez sem o laço para depois implementar
 
 
+Estou notando que não esta muito claro o negocio de escopo quando estou usando função quando o parametro é um vetor e isso me fez pensar no escopo dos objetos JS, eles podem ser acessados por qualquer função sem precisar manda-los por parametros
 

@@ -1,5 +1,33 @@
-let vet = [5, 1]
+function limpaVet(){
+    /*
+    console.log(`O tamanho do vetor ${arguments.length}`)
+    console.log(`O vetor se encontra assim  ${vet}`)
+    vet.pop()
+    console.log(`O vetor se encontra assim ${vet} agora`)
+    vet.pop()
+    console.log(`O vetor se encontra assim ${vet} agora`)
+    vet.pop()
+    console.log(`O vetor se encontra assim ${vet} agora`)
+    vet.pop()
+    console.log(`O vetor se encontra assim ${vet} agora`)
+    */
 
-console.log('O número 6 esta dentro do vetor: '+ vet.indexOf(1))
+    for(let c = 1; c < arguments.length; c++){
+        console.log(`O vetor se encontra assim  ${vet}`)
+        vet.pop()
+    }
+    
+}
 
-console.log(vet.length)
+let vet = [5, 1, 2, 9]
+
+limpaVet(...vet)
+
+
+//console.log(vet.length)
+/*
+
+//tentar mandar um vetor sem usar o negocio certo no parametro.
+
+usar laço para ir excluindo os valores do vetor
+*/
