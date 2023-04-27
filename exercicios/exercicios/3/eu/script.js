@@ -27,6 +27,7 @@ function adicionar(){
         let opcao = document.createElement('option')
         opcao.innerHTML = `Valor ${n} adicionado`
         selete.appendChild(opcao)
+        inseriu = true
     }
 }
 
@@ -67,14 +68,22 @@ function media(){
 }
 
 function finalizar(){
-    res.innerHTML += `<p>Ao todo, temos ${arguments.length} cadastrados.</p>`
-    res.innerHTML += `<p>O maior valor informado foi ${acharMaior(...vet)}.</p>`
-    res.innerHTML += `<p>O menor valor informado foi ${acharMenor(...vet)}.</p>`
-    res.innerHTML += `<p>Somando todos os valores, temos ${somaTudo(...vet)}.</p>`
-    res.innerHTML += `<p>A média dos valores digitados é ${media(...vet)}.</p>`
-    viuRelatorio = true
+    if(inseriu){
+        //Mostra um relatorio na tela
+        res.innerHTML += `<p>Ao todo, temos ${arguments.length} cadastrados.</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${acharMaior(...vet)}.</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${acharMenor(...vet)}.</p>`
+        res.innerHTML += `<p>Somando todos os valores, temos ${somaTudo(...vet)}.</p>`
+        res.innerHTML += `<p>A média dos valores digitados é ${media(...vet)}.</p>`
+        viuRelatorio = true
+    }else{
+        //Mensagem de erro
+        window.alert('Adicione valores antes de finalizar!')
+    }
+    
 }
 
 //Criação do vetor
 const vet = []
 let viuRelatorio = false
+let inseriu = false
