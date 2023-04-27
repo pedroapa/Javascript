@@ -31,7 +31,6 @@ function adicionar(){
             console.log(`DENTRO DO VETOR: `+ vet)
         }
     }
-    
 
     console.log(`Testando se o valor esta no vetor: ${vet.indexOf(n)}`)
 }
