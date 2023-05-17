@@ -21,7 +21,7 @@ function procCep(){
         }
 
         //Quando a resposta vir
-        xhttp.onload = function(){
+        xhttp.onreadystatechange = function(){
             //Verificar se deu certo
             if(xhttp.readyState == 4 && xhttp.status == 200){
                 //console.log('Chegou a resposta')
