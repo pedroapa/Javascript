@@ -18,14 +18,12 @@ function procCep(){
         bairro.value = json.bairro 
         cidade.value = json.localidade 
         estado.value = json.uf
-        //console.log('Chegou a resposta')
     }
 
     //Quando a resposta vir
     xhttp.onreadystatechange = function(){
         //Verificar se deu certo
         if(xhttp.readyState == 4 && xhttp.status == 200){
-            //console.log('Chegou a resposta')
             preencheFor(JSON.parse(this.responseText))
         }    
     }
@@ -33,7 +31,6 @@ function procCep(){
     //Mandar para o endereço
     xhttp.open("GET", `https://viacep.com.br/ws/${search}/json/`)
     xhttp.send()
-
 }
 
 cep.addEventListener('mouseout', procCep)
