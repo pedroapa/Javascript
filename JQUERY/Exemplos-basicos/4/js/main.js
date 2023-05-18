@@ -17,7 +17,7 @@ function procCep(){
         endereco.value = json.logradouro
         bairro.value = json.bairro 
         cidade.value = json.localidade 
-        estado.value = json.uf
+        estado.value = json.uf 
     }
 
     //Quando a resposta vir
